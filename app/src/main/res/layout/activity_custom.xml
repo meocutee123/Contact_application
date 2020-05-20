@@ -14,11 +14,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txtName"
-                android:textColor="@color/colorRed"
+                android:textSize="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name" />
@@ -34,7 +35,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Date of birth" />
+                    android:text="Date of birth"
+                    android:textColor="@color/colorRed"
+                    />
 
                 <TextView
                     android:id="@+id/txtPhone"
@@ -70,11 +73,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/ic_edit" />
+
+
             </LinearLayout>
 
         </LinearLayout>
 
 
-
     </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
 </LinearLayout>
